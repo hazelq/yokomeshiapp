@@ -1,0 +1,24 @@
+/* app css stylesheet */
+.card-name {
+
+}
+
+.cards {
+  list-style: none;
+}
+
+.cards li {
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px;
+  border: 1px solid #000;
+  float: left;
+  text-align: center;
+  margin: 5px;
+  line-height: 50px;
+}
+
+.ng-hide {
+  display:block!important;
+  visibility: hidden;
+}

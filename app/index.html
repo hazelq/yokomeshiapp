@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" ng-app="hiraganaApp">
+<head>
+  <meta charset="utf-8">
+  <title>Yokomeshi</title>
+  <link rel="stylesheet" href="css/app.css"/>
+    <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="CardListCtrl">
+
+  <h1>Hiragana Drill</h1>
+  <span>{{guessCard}}</span>
+  <ul class="cards">
+    <li ng-repeat="card in cards" ng-hide="!card.display" ng-click="pickCard(card)" >
+      {{card.name}}
+    </li>
+  </ul>
+
+</body>
+</html>
