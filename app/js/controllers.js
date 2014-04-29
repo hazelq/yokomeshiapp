@@ -6,7 +6,7 @@ var hiraganaApp = angular.module('hiraganaApp', []);
 
 hiraganaApp.controller('CardListCtrl', ['$scope', '$http', 
 	function ($scope, $http) {
-		var counter = 0, startTime = 0;
+		var counter = 0, startTime = 0, endTime = 0, totalTime = 0;
 
 		$http.get('cards/hiragana.json').success( function(data) {
 			$scope.cards = data;
@@ -26,8 +26,10 @@ hiraganaApp.controller('CardListCtrl', ['$scope', '$http',
 					$scope.cards = shuffleCards($scope.cards);
 				}
 				else {
+					endTime = new Date();
+					totalTime = endTime.getTime() - startTime.getTime();
 					setTimeout(function(){
-						alert("GAME OVER");
+						alert("GAME OVER ~ time:"+totalTime);
 					}, 500);
 				}
 			}
