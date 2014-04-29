@@ -1,21 +1,15 @@
 /* app css stylesheet */
-.card-name {
-
+.guess-card {
+  width: 100px;
+  margin: 5px auto;
 }
 
 .cards {
-  list-style: none;
-}
-
-.cards li {
-  height: 50px;
-  width: 50px;
-  padding: 10px 10px;
+  height: 100px;
+  width: 100px;
   border: 1px solid #000;
   float: left;
-  text-align: center;
   margin: 5px;
-  line-height: 50px;
 }
 
 .ng-hide {
