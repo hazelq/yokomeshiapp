@@ -1,1 +1,1 @@
-Hiragana flash game cards
+Hiragana flash game cards using angularJS
